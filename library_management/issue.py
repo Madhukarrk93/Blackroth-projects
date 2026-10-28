@@ -1,6 +1,7 @@
 
 """Book issuing, returning, and late-fine management."""
 
+
 from datetime import date, timedelta
 from typing import Any
 
@@ -8,7 +9,6 @@ from book import BookManager
 from exceptions import (
     BookUnavailableError,
     IssueNotFoundError,
-    MemberNotFoundError,
     ValidationError,
 )
 from member import MemberManager
@@ -143,4 +143,3 @@ class IssueManager:
             for issue in self._load_issues()
             if issue["member_id"] == member_id
         )
-

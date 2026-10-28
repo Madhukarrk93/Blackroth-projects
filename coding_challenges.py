@@ -3,6 +3,9 @@
 
 
 # Challenge 1: Student Class
+import math
+
+
 class Student:
     """Store student details and calculate the average marks."""
 
@@ -32,7 +35,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    
+
 
 # Challenge 2: Bank Account
 class BankAccount:
@@ -65,9 +68,8 @@ class BankAccount:
         """Display the current account balance."""
         print(f"Account Holder: {self.account_holder}")
         print(f"Current Balance: Rs. {self.balance:.2f}")
-        
-        
-        
+
+
 # Challenge 3: Employee Management
 class Employee:
     """Store employee details and calculate annual salary."""
@@ -134,10 +136,9 @@ class Motorcycle(Vehicle):
         """Display motorcycle information."""
         super().display_details()
         print(f"Engine Capacity: {self.engine_cc} cc")
-        
-        
+
+
 # Challenge 5: Shape Area Calculator
-import math
 
 
 class Shape:
@@ -167,8 +168,8 @@ class Rectangle(Shape):
 
     def area(self) -> float:
         return self.length * self.width
-    
-    
+
+
 # Challenge 6: Shopping Cart
 class ShoppingCart:
     """Manage items and their prices in a shopping cart."""
@@ -196,9 +197,8 @@ class ShoppingCart:
             print(f"{name}: Rs. {price:.2f}")
 
         print(f"Total: Rs. {self.calculate_total():.2f}")
-        
-        
-        
+
+
 # Challenge 7: Movie Rating
 class Movie:
     """Store movie details and manage ratings."""
@@ -251,8 +251,8 @@ class Patient:
         print(f"Patient Name: {self.name}")
         print(f"Diagnosis: {self.diagnosis}")
         print(f"Room Number: {self.room_number}")
-        
-        
+
+
 # Challenge 9: School Result Processing
 class SchoolResult:
     """Calculate and display a student's school result."""
@@ -285,9 +285,8 @@ class SchoolResult:
         print(f"Total Marks: {self.calculate_total():.0f}")
         print(f"Percentage: {self.calculate_percentage():.2f}%")
         print(f"Result: {self.get_result()}")
-        
-        
-    
+
+
 # Challenge 10: Online Course Management
 class OnlineCourse:
     """Manage an online course and its enrolled students."""
@@ -314,12 +313,6 @@ class OnlineCourse:
         print(f"Students: {', '.join(self.students)}")
 
 
-
-
-
-
-
-
 def main() -> None:
     print("=== Challenge 1: Student Class ===")
     student = Student("Rahul", [85, 90, 78])
@@ -330,12 +323,11 @@ def main() -> None:
     account.deposit(500.00)
     account.withdraw(200.00)
     account.display_balance()
-    
+
     print("\n=== Challenge 3: Employee Management ===")
     employee = Employee("Priya", 101, 25000.00)
     employee.display_details()
-    
-    
+
     print("\n=== Challenge 4: Vehicle Inheritance ===")
 
     car = Car("Toyota", "Innova", 4)
@@ -345,7 +337,6 @@ def main() -> None:
     bike = Motorcycle("Yamaha", "R15", 155)
     bike.display_details()
 
-
     print("\n=== Challenge 5: Shape Area Calculator ===")
 
     circle = Circle(5)
@@ -353,8 +344,7 @@ def main() -> None:
 
     print(f"Circle Area: {circle.area():.2f}")
     print(f"Rectangle Area: {rectangle.area():.2f}")
-    
-    
+
     print("\n=== Challenge 6: Shopping Cart ===")
 
     cart = ShoppingCart()
@@ -362,8 +352,7 @@ def main() -> None:
     cart.add_item("Mouse", 500.00)
     cart.add_item("Headphones", 800.00)
     cart.display_cart()
-    
-    
+
     print("\n=== Challenge 7: Movie Rating ===")
 
     movie = Movie("RRR")
@@ -372,26 +361,21 @@ def main() -> None:
     movie.add_rating(9.5)
     movie.display_details()
 
-
     print("\n=== Challenge 8: Hospital Patient Records ===")
 
     patient = Patient(1001, "Ravi", "Fever", 205)
     patient.display_record()
-
-
 
     print("\n=== Challenge 9: School Result Processing ===")
 
     result = SchoolResult("Rahul", [85, 90, 78])
     result.display_result()
 
-
     print("\n=== Challenge 9: School Result Processing ===")
 
     result = SchoolResult("Anjali", [85, 78, 92, 88, 90])
     result.display_result()
-    
-    
+
     print("\n=== Challenge 10: Online Course Management ===")
 
     course = OnlineCourse("Python OOP", "Mr. Kumar")
@@ -399,7 +383,6 @@ def main() -> None:
     course.enroll_student("Priya")
     course.enroll_student("Anjali")
     course.display_course()
-
 
 
 if __name__ == "__main__":
