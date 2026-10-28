@@ -1,0 +1,16 @@
+[
+    {
+        "book_id": 101,
+        "title": "Python Basics",
+        "author": "John Smith",
+        "total_copies": 3,
+        "borrowed_copies": 0
+    },
+    {
+        "book_id": 102,
+        "title": "OOP in Python",
+        "author": "Jane Smith",
+        "total_copies": 2,
+        "borrowed_copies": 0
+    }
+]

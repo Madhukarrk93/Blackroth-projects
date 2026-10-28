@@ -1,0 +1,12 @@
+[
+    {
+        "member_id": 1,
+        "name": "Rahul Kumar",
+        "email": "rahul@example.com"
+    },
+    {
+        "member_id": 2,
+        "name": "Priya Kumar",
+        "email": "priya@example.com"
+    }
+]
